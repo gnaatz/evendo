@@ -1,2 +1,2 @@
 # evendo
-Never forget what you wanted todo before attending that event.
+Never forget what you want todo before attending that event.
