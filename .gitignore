@@ -82,5 +82,5 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
-doc/XML
+doc/diagrams/XML
 .DS_Store
