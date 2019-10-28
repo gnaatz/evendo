@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">evendo</string>
+    <string name="app_name">Evendo</string>
+    <string name="todo">To-Do</string>
+    <string name="calendar">Calendar</string>
+    <string name="slogan">Stay Organized.</string>
 </resources>
