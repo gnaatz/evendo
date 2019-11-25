@@ -15,63 +15,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         <LinearLayout
+                android:id="@+id/events"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingLeft="11dp"
                 android:paddingRight="11dp"
                 android:orientation="vertical">
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:weightSum="5"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:layout_marginBottom="6dp"
-                    android:background="@drawable/event_entry"
-                    android:orientation="horizontal">
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Event Name"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="Event Description"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="time"/>
-            </LinearLayout>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:weightSum="5"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:layout_marginBottom="6dp"
-                    android:background="@drawable/event_entry"
-                    android:orientation="horizontal">
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Event Name"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="Event Description"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="time"/>
-            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
