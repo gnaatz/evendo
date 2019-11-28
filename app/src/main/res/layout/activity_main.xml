@@ -14,15 +14,11 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-        <LinearLayout
-                android:id="@+id/events"
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="11dp"
-                android:paddingRight="11dp"
-                android:orientation="vertical">
-        </LinearLayout>
+                android:layout_height="match_parent"/>
     </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"

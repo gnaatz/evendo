@@ -3,4 +3,6 @@
     <string name="todo">To-Do</string>
     <string name="calendar">Calendar</string>
     <string name="slogan">Stay Organized.</string>
+    <string name="add_title">Add Title</string>
+    <string name="description">Description</string>
 </resources>
