@@ -1,6 +1,6 @@
 package de.gnaatz.evendo.model
 
-class Event(var title: String, var description: String) {
+class Event(var title: String, var description: String, var hour: Int, var minute: Int) {
     private var todos: ArrayList<Todo> = ArrayList()
 
     fun addTodo(todo: Todo) {

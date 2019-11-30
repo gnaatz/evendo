@@ -1,5 +1,6 @@
 package de.gnaatz.evendo.controller
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -47,11 +48,12 @@ class EventDisplay(private var data: ArrayList<Event>): RecyclerView.Adapter<Rec
         var text = (itemView as LinearLayout).children.toList()[1] as TextView
         var time = (itemView as LinearLayout).children.toList()[2] as TextView
 
+        @SuppressLint("SetTextI18n")
         fun bind(data: ArrayList<Event>, position: Int) {
             Log.d(tag, "binding position $position")
             title.text = data[position].title
             text.text = data[position].description
-            time.text = "Time"
+            time.text = "${data[position].hour}:${data[position].minute}"
         }
     }
 }

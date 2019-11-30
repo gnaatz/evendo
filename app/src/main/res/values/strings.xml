@@ -5,4 +5,6 @@
     <string name="slogan">Stay Organized.</string>
     <string name="add_title">Add Title</string>
     <string name="description">Description</string>
+    <string name="back_to_menu">Back to Menu</string>
+    <string name="pick_time">Pick Time</string>
 </resources>

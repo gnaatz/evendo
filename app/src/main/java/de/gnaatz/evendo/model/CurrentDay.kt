@@ -27,7 +27,8 @@ class CurrentDay: ViewModel() {
     fun addEvent(event: Event) {
         Log.d(tag, "${eventList.value!!.size}")
         val temp = ArrayList<Event>()
-        temp.addAll(eventList.value!!)
+        if(!eventList.value.isNullOrEmpty())
+            temp.addAll(eventList.value!!)
         temp.add(event)
         eventList.value = temp
     }
