@@ -8,12 +8,8 @@ import android.widget.ImageButton
 import android.widget.TimePicker
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.lifecycle.ViewModelProviders
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import de.gnaatz.evendo.MainActivity
 import de.gnaatz.evendo.R
-import de.gnaatz.evendo.model.CurrentDay
-import de.gnaatz.evendo.model.Event
 import de.gnaatz.evendo.util.Finals
 
 

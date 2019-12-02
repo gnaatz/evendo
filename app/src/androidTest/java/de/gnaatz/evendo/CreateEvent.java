@@ -1,27 +1,29 @@
 package de.gnaatz.evendo;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-public class ShowEvent {
+public class CreateEvent {
     private String day;
     private String name;
 
     private String actualAnswer;
 
-    @cucumber.api.java.en.Given("{string} and {string} are required")
+    @Given("(.*?) and (.*?) are required")
     public void dayAndNameAreRequired(String day, String name) {
         this.day = day;
         this.name = name;
     }
 
-    @cucumber.api.java.en.When("I press on the Event")
-    public void iPressOnTheEvent() {
+    @When("I press the button to create an event")
+    public void iPressTheButtonToCreateAnEvent() {
         this.actualAnswer = (!(day.isEmpty() || name.isEmpty())) ? "right" : "wrong";
     }
 
-    @Then("{string} should be returned")
+    @Then("(.*?) shall be returned")
     public void shouldBeReturned(String answer) {
         assertEquals(answer, actualAnswer);
     }
