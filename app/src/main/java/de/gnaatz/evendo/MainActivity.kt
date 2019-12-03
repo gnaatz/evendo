@@ -86,15 +86,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(requestCode == Finals.CREATE_EVENT) {
-            val bundle = data!!.extras
-            val title = bundle!!.get("title") as String
-            val description = bundle.get("description") as String
-            val hour = bundle.get("hour") as Int
-            val minute = bundle.get("minute") as Int
-            val event = Event(title, description, hour, minute)
-
-            eventLoader.addEvent(event)
+        when(requestCode) {
+            Finals.CREATE_EVENT -> {
+                val bundle = data!!.extras
+                if(bundle!!.get("successful") as Boolean) {
+                    val title = bundle.get("title") as String
+                    val description = bundle.get("description") as String
+                    val hour = bundle.get("hour") as Int
+                    val minute = bundle.get("minute") as Int
+                    val event = Event(title, description, hour, minute)
+                    eventLoader.addEvent(event)
+                }
+            }
         }
     }
 

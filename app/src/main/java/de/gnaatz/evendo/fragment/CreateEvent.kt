@@ -24,6 +24,8 @@ class CreateEvent: AppCompatActivity() {
 
         val backButton = findViewById<ImageButton>(R.id.back_button)
         val fab = findViewById<FloatingActionButton>(R.id.fab_create_event)
+        intent.putExtra("successful", false)
+        setResult(Finals.CREATE_EVENT, intent)
 
         backButton.setOnClickListener {
             Log.d(tag, "Closed")
@@ -39,6 +41,7 @@ class CreateEvent: AppCompatActivity() {
             val minute = timePicker.minute
 
             intent = Intent()
+            intent.putExtra("successful", true)
             intent.putExtra("title", title)
             intent.putExtra("description", description)
             intent.putExtra("hour", hour)
