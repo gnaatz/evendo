@@ -44,71 +44,67 @@ The Data will be saved on a backend Server so you can log on on multiple devices
 
 ### 1.4 References
 
-	- Projectdefinition
+- Projectdefinition
 
 ### 1.5 Overview
 
-	The Document is organized by feature.
-	Throguh the fact that we are in the beginning of our project the most parts of this SRS are not discussed jet, but will be added according to the stand of the project.
+The Document is organized by feature.
+Throguh the fact that we are in the beginning of our project the most parts of this SRS are not discussed jet, but will be added according to the stand of the project.
 
 ## 2. Overall Description
 
-	- product perspective
-
-	- product functions
-
-	- user characteristics
-
-	- constraints
-
-	- assumptions and dependencies
+- product perspective
+- product functions
+- user characteristics
+- constraints
+- assumptions and dependencies
 
 ## 3. Specific Requirements
 
 ### 3.1 Functionality
 
-	- Create Calendar
-	- Create Event
-	- Create ToDo
-	- Create ToDo for Event
-	- Import Calendar
+- Create Calendar
+- Create Event
+- Create ToDo
+- Create ToDo for Event
+- Import Calendar
 
 #### 3.1.1 Create Calendar
 
-	The user shall be able to create a new calendar in the app, with a by the user specified name.
+The user shall be able to create a new calendar in the app, with a by the user specified name.
 
 #### 3.1.2 Create Event
 
-	In each calendar an event is createble. The name, date, time, description and reminder are specifiable parameters. It shall also be possible to attach ToDos (as described in 3.1.4).
+In each calendar an event is createble. The name, date, time, description and reminder are specifiable parameters. It shall also be possible to attach ToDos (as described in 3.1.4).
 
 #### 3.1.3 Create ToDO
 
-	In the ToDo-Tab the user can create general ToDos which not correspond with any event.
-	The ToDo contains here just a description.
+In the ToDo-Tab the user can create general ToDos which not correspond with any event.
+The ToDo contains here just a description.
 
 #### 3.1.4 Create ToDo for Event
 
-	It is possible to create an ToDo for an Event, where you can set a time before the start of the event when the ToDo needs to be done and of course a description.
+It is possible to create an ToDo for an Event, where you can set a time before the start of the event when the ToDo needs to be done and of course a description.
 
 #### 3.1.5 Import Calendar
 
-	The user can import calendars to this application e.g. RAPLA and assign then ToDos to the events there.
+The user can import calendars to this application e.g. RAPLA and assign then ToDos to the events there.
 
 ### 3.2 Usability
 
-	The user should be able to use our application as an default tool in his daily life.
+The user should be able to use our application as an default tool in his daily life.
 
 #### 3.2.1 Easy Use
 	
-	The app is held basic to give the user a great experience working with our app.
+The app is held basic to give the user a great experience working with our app.
 
 ### 3.3 Reliability
 
-	The user always can rely on the data shown to him.
+The user always can rely on the data shown to him.
 
 #### 3.3.1 No inconsistency
 
-	If the user has made any changes it shall be impossible that the data is not synced with the backend and the changes get lost. 
+If the user has made any changes it shall be impossible that the data is not synced with the backend and the changes get lost. 
 
 ### 3.4 Performance
 
@@ -120,22 +116,22 @@ To be discussed.
 
 #### 3.5.1 Android
 
-	The app will be exclusively available for android in the first sight. IOS compatibility is therfore currently not planned.
+The app will be exclusively available for android in the first sight. IOS compatibility is therfore currently not planned.
 
 #### 3.5.2 Conventions
 
-	The Team will try his best to fullfill the coding and naming standards of the languages used.
+The Team will try his best to fullfill the coding and naming standards of the languages used.
 
 ### 3.6 Design Constraints
 
 #### 3.6.1 Android Studio
 
-	The main part of the app will be developt using Android Studio.
+The main part of the app will be developt using Android Studio.
 
 #### 3.6.2 Design
 
-	We made a design prototype of how the app should look like.
-	You can find it [here]( evendo/doc/app.png)
+We made a design prototype of how the app should look like.
+You can find it [here]( evendo/doc/app.png)
 
 ### 3.7 On-line User Documentation and Help System Requirements
 
@@ -143,22 +139,22 @@ tbd
 
 ### 3.8 Purchased Components
 
-	One server for the hosting of the blog and one for YouTrack.
-	One Server for the backend.
+One server for the hosting of the blog and one for YouTrack.
+One Server for the backend.
 
 ### 3.9 Interfaces
 
 
 #### 3.9.1 User Interfaces
 
-	The general App.
-		- Calendar View
-		- ToDo View
-		- Settings View
-		- Create Event Dialog
-		- Create ToDo Dialog
-		- Import Calendar Dialog
-		- Create ToDo for Event Dialog
+The general App.
+	- Calendar View
+	- ToDo View
+	- Settings View
+	- Create Event Dialog
+	- Create ToDo Dialog
+	- Import Calendar Dialog
+	- Create ToDo for Event Dialog
 
 #### 3.9.2 Hardware Interfaces
 
@@ -170,7 +166,7 @@ tbd
 
 #### 3.9.4 Communication Interfaces
 
-	Backend Server for the storage of the data to allow the access via multiple devices.
+Backend Server for the storage of the data to allow the access via multiple devices.
 
 ### 3.10 Licensing Requirements
 
