@@ -96,15 +96,19 @@ The Data will be saved on a backend Server so you can log on on multiple devices
 
 ### 3.2 Usability
 
-To be discussed
+	The user should be able to use our application as an default tool in his daily life.
 
-#### 3.2.1 Usability Requirement One
+#### 3.2.1 Easy Use
+	
+	The app is held basic to give the user a great experience working with our app.
 
 ### 3.3 Reliability
 
-To be discussed
+	The user always can rely on the data shown to him.
 
-#### 3.3.1 Reliability Requirement One
+#### 3.3.1 No inconsistency
+
+	If the user has made any changes it shall be impossible that the data is not synced with the backend and the changes get lost. 
 
 ### 3.4 Performance
 
@@ -130,7 +134,8 @@ To be discussed.
 
 #### 3.6.2 Design
 
-	At this point no design has been thought of for the App. Except of the probable use of tabs e.g. one for the calendar view and one for the ToDo view.
+	We made a design prototype of how the app should look like.
+	You can find it [here]( evendo/doc/app.png)
 
 ### 3.7 On-line User Documentation and Help System Requirements
 
@@ -181,4 +186,9 @@ tbd
 
 ## 4. Supporting Information
 
-*ToDo:* link Use Case Diagramm
+Use-Case Diagrams:
+[Create Event](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/Usecase-createEntry.png)
+[Create ToDo](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/Usecase-createTODO.png)
+[Show Event](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/ShowEvent.svg)
+[Change Day](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/ChangeDay.svg)
+[Create ToDO in Event](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/CreateToDoInEvent.svg)
