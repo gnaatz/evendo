@@ -135,7 +135,7 @@ You can find it [here]( evendo/doc/app.png)
 
 ### 3.7 On-line User Documentation and Help System Requirements
 
-tbd
+Our app should be intuitive so we don't need to add an documentation to use our calendar. 
 
 ### 3.8 Purchased Components
 
@@ -158,11 +158,15 @@ The general App.
 
 #### 3.9.2 Hardware Interfaces
 
-tbd
+The frontend should be hardware independent.
+
+The backend is build for x64 hardware.
 
 #### 3.9.3 Software Interfaces
 
-tbd
+The frontend software is limited to Android. Explicit versions will be released after checking the requirements of our Kotlin Code.
+
+The backend software is not limited to any operating system.
 
 #### 3.9.4 Communication Interfaces
 
@@ -170,12 +174,12 @@ Backend Server for the storage of the data to allow the access via multiple devi
 
 ### 3.10 Licensing Requirements
 
-tbd
+Evendo will be released on MIT License.
 
 ### 3.11 Legal, Copyright, and Other Notices
 
-tbd
-
+Nothing required.
+ 
 ### 3.12 Applicable Standards
 
 tbd
