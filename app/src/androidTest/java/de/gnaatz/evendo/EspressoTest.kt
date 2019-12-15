@@ -1,6 +1,7 @@
 package de.gnaatz.evendo
 
 import android.view.View
+import android.widget.DatePicker
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.closeSoftKeyboard
 import androidx.test.espresso.Espresso.onView
@@ -10,8 +11,6 @@ import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
@@ -20,18 +19,15 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import android.widget.TimePicker
 import org.hamcrest.Matchers
-import androidx.test.espresso.matcher.ViewMatchers.withClassName
 import androidx.test.espresso.Espresso.onView
 import android.widget.NumberPicker
-import androidx.test.espresso.matcher.ViewMatchers.withClassName
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.ViewInteraction
-import androidx.test.espresso.matcher.ViewMatchers.withClassName
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.UiController
+import androidx.test.espresso.matcher.ViewMatchers.*
 import org.hamcrest.Matcher
-
-
+import java.util.*
 
 
 @RunWith(AndroidJUnit4::class)
@@ -73,7 +69,8 @@ class EspressoTest {
     }
 
     @Test
-    fun changeDay(){
-        onView(withId(R.id.calendar))
+    fun changeDay() {
+        var day = 1
+
     }
 }
