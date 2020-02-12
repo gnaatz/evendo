@@ -10,14 +10,14 @@ public class ChangeDay {
 
     private String actualAnswer;
 
-    @Given("(.*?) is needed")
-    public void newDayIsNeeded(String newDay) {
+    @Given("(.*?) is given")
+    public void newDayIsGiven(String newDay) {
         this.newDay = newDay;
     }
 
-    @When("I click on another Day")
-    public void iClickOnAnotherDay() {
-        this.actualAnswer = (!(newDay.isEmpty())) ? "right" : "wrong";
+    @When("I click on this Day")
+    public void iClickOnThisDay() {
+        this.actualAnswer = (!(newDay.isEmpty())) ? "right" : "false";
     }
 
     @Then("(.*?) might be returned3")

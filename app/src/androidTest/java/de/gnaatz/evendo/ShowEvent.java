@@ -7,23 +7,22 @@ import cucumber.api.java.en.When;
 import static org.junit.Assert.assertEquals;
 
 public class ShowEvent {
-    private String day;
-    private String name;
+    private String event;
 
     private String actualAnswer;
 
     @Given("(.*?) shall be given")
-    public void dayShallBeGiven(String day) {
-        this.day = day;
+    public void dayShallBeGiven(String event) {
+        this.event = event;
     }
 
     @When("I click on an event")
     public void iClickOnAnEvent() {
-        this.actualAnswer = (!(day.isEmpty())) ? "right" : "wrong";
+        this.actualAnswer = (!(event.isEmpty())) ? "right" : "false";
     }
 
     @Then("(.*?) should be shown")
-    public void shouldBeReturned(String answer) {
+    public void shouldBeShown(String answer) {
         assertEquals(answer, actualAnswer);
     }
 }

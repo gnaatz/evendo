@@ -1,10 +1,11 @@
 Feature: Show Event
-  Show an Event
-  Scenario Outline: Check required fields
-    Given <day> shall be given
+  Can I show an Event
+  Scenario Outline: I can show or not show the Event
+    Given <event> shall be given
     When I click on an event
     Then <value> should be shown
     Examples:
-      | day            | value  |
-      | 03.11.2019     | right  |
-      | 29-10-2019     | right  |
+      | event            | value  |
+      | Homework         | right  |
+      | 08               | right  |
+      |                  | false  |

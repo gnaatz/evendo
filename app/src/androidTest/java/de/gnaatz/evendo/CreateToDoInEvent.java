@@ -9,23 +9,23 @@ import static org.junit.Assert.assertEquals;
 
 public class CreateToDoInEvent {
     private String event;
-    private String name;
+    private String title;
 
     private String actualAnswer;
 
-    @Given("(.*?) and (.*?) must be given")
-    public void eventAndNameMustBeGiven(String event, String name) {
+    @Given("(.*?) and (.*?) are input values")
+    public void eventAndNameAreInputValues(String event, String title) {
         this.event = event;
-        this.name = name;
+        this.title = title;
     }
 
-    @When("I press the button to create a ToDo in an event")
-    public void iPressTheButtonToCreateAToDoInAnEvent() {
-        this.actualAnswer = (!(event.isEmpty() || name.isEmpty())) ? "right" : "wrong";
+    @When("I create a ToDo in an event with this input")
+    public void iCreateAToDoInAnEventWithThisInput() {
+        this.actualAnswer = (! title.isEmpty()) ? "right" : "false";
     }
 
     @Then("(.*?) must be returned1")
-    public void shouldBeReturned(String answer) {
+    public void mustBeReturned(String answer) {
         assertEquals(answer, actualAnswer);
     }
 }
