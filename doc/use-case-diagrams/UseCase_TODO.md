@@ -19,9 +19,9 @@ This use case is for creating new todos in your calendar.
 
 ## 2. Flow of Events
 ### 2.1 Basic Flow
-![Workflow Event](diagrams/Workflow_TODO.png)
+![Workflow Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/Workflow_TODO.png)
 #### 2.1.1 Activity Diagram
-![ActivityDiagram_EVENT](diagrams/ActivityDiagram_TODO.png)
+![ActivityDiagram_EVENT](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_TODO.png)
 #### 2.1.2 Mock up
 ![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
 ### 2.2 Alternative Flows
