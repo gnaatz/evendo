@@ -19,7 +19,7 @@ This use case is for updating the entries list after changing the day in the cal
 
 ## 2. Flow of Events
 ### 2.1 Basic Flow
-![Workflow Event](diagrams/ChangeDay.svg)
+![Workflow Event](activity-diagrams/ChangeDay.svg)
 #### 2.1.1 Activity Diagram
 Will be added later on!
 #### 2.1.2 Mock up
