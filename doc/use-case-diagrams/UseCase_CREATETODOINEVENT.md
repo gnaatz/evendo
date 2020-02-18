@@ -19,7 +19,7 @@ This use case is to create a todo according to an appointment.
 
 ## 2. Flow of Events
 ### 2.1 Basic Flow
-![Workflow Event](diagrams/CreateToDoInEvent.svg)
+![Workflow Event](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/CreateToDoInEvent.svg)
 #### 2.1.1 Activity Diagram
 Will be added later on!
 #### 2.1.2 Mock up
