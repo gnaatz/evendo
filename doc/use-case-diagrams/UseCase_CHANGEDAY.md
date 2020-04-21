@@ -19,9 +19,9 @@ This use case is for updating the entries list after changing the day in the cal
 
 ## 2. Flow of Events
 ### 2.1 Basic Flow
-![Workflow Event](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ChangeDay.svg)
+![Workflow ChangeDay](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_ChangeDay.svg)
 #### 2.1.1 Activity Diagram
-Will be added later on!
+![Activity ChangeDay](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_ChangeDay.svg)
 #### 2.1.2 Mock up
 ![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
 ### 2.2 Alternative Flows
