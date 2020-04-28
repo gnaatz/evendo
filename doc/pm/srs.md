@@ -35,10 +35,9 @@ The Main focus is the Android-App.
 
 The Evendo Appllication helps you to stay organized. It provides the opportunity to assign ToDos directly to an Event in one of your calendars. You will never forget a pre-meeting task if you use Evendo.
 
-You can create Calendars, Events and ToDos or create ToDos connected to an Event.
+You can create Calendars, Events and ToDos or create ToDos connected to an Event. You will be able to even import RAPLA or any ical file you wish.
 The Data will be saved on a backend Server so you can log on on multiple devices.
-
-*ToDo:* link UseCase Models
+You will find our UseCase models here - [4. Supporting Information](#)
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
 
@@ -187,8 +186,8 @@ tbd
 ## 4. Supporting Information
 
 Use-Case Diagrams:
-[Create Event](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/Usecase-createEntry.png)
-[Create ToDo](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/Usecase-createTODO.png)
-[Show Event](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/ShowEvent.svg)
-[Change Day](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/ChangeDay.svg)
-[Create ToDO in Event](https://github.com/gnaatz/evendo/blob/docu/doc/diagrams/CreateToDoInEvent.svg)
+[Create Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_EVENT.md)
+[Create ToDo](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_TODO.md)
+[Show Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_SHOW.md)
+[Change Day](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_CHANGEDAY.md)
+[Create ToDO in Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_CREATETODOINEVENT.md)
