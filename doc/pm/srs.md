@@ -186,8 +186,8 @@ tbd
 ## 4. Supporting Information
 
 Use-Case Diagrams:
-[Create Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_ENTRY.md)
+[Create Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_EVENT.md)
 [Create ToDo](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_TODO.md)
-[Show Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_EVENT.md)
+[Show Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_SHOW.md)
 [Change Day](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_CHANGEDAY.md)
 [Create ToDO in Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_CREATETODOINEVENT.md)
