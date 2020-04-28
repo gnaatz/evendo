@@ -3,6 +3,7 @@ Date | Version | Description | Author
 --- | --- | --- | ---
 25.10.19 | 1.0 | First release of the UC | Kolja Groß
 05.12.19 | 1.1 | Added Pre and Post conditions | Niclas Schmuck
+28.04.20 | 1.2 | Added Pre and Post conditions | Niclas Schmuck
 
 ## Table of Contents
 - [1. Use Case Show Event](#1-use-case-create-account)
