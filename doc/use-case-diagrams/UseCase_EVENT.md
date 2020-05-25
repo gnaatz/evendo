@@ -23,7 +23,7 @@ This use case is for creating new entries to the calendar, called events.
 #### 2.1.1 Activity Diagram
 ![ActivityDiagram_EVENT](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_EVENT.png)
 #### 2.1.2 Mock up
-![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
+![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/mockups/createEventMockup.png)
 ### 2.2 Alternative Flows
 There are no alternative possible flows discussed. Only our Basic Flow should work.
 
