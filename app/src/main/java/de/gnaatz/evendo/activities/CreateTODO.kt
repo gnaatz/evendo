@@ -20,7 +20,7 @@ class CreateTODO: AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar_add_todo)
         setSupportActionBar(toolbar)
 
-        val backButton = findViewById<ImageButton>(R.id.back_button)
+        val backButton = findViewById<ImageButton>(R.id.back_button_from_todo)
         val fab = findViewById<FloatingActionButton>(R.id.fab_create_todo)
         intent.putExtra("successful", false)
         setResult(Finals.CREATE_TODO, intent)

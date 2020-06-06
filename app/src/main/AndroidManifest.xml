@@ -16,12 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".activities.CreateEvent"
-=======
         <activity android:name=".MainActivityTodo"/>
-        <activity android:name=".fragment.CreateEvent"
->>>>>>> origin/dev_todos
+        <activity android:name=".activities.CreateEvent"
                 android:parentActivityName=".MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
