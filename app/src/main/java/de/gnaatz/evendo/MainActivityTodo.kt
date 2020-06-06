@@ -76,7 +76,8 @@ class MainActivityTodo : AppCompatActivity() {
                 val bundle = data!!.extras
                 if(bundle!!.get("successful") as Boolean) {
                     val title = bundle.get("title") as String
-                    val todo = Todo(title)
+                    val description = bundle.get("description") as String
+                    val todo = Todo(title, description)
                     todoLoader.addTodo2(todo)
                 }
             }

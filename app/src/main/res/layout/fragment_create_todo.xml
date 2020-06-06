@@ -19,7 +19,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                 <ImageButton
-                        android:id="@+id/back_button"
+                        android:id="@+id/back_button_from_todo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -43,7 +43,7 @@
                         android:textColor="@android:color/white"
                         android:inputType="text" />
                 <ImageButton
-                        android:id="@+id/delete_all_text_button"
+                        android:id="@+id/delete_all_text_button_todo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"

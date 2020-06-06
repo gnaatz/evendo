@@ -1,10 +1,13 @@
 package de.gnaatz.evendo.controller
 
 import android.annotation.SuppressLint
+import android.widget.Toast
 import de.gnaatz.evendo.MainActivityTodo
 import de.gnaatz.evendo.model.Todo
+import de.gnaatz.evendo.net.GetTodoRequest
+import java.net.URL
 
-class TodoLoader(mainActivity: MainActivityTodo) {
+class TodoLoader(mainActivityTodo: MainActivityTodo) {
     private val tag = "TodoLoader"
 
     companion object {
@@ -38,10 +41,10 @@ class TodoLoader(mainActivity: MainActivityTodo) {
         }
     }
 
-    /*init {
+    init {
         Toast.makeText(mainActivityTodo, "Getting Todos initially", Toast.LENGTH_SHORT).show()
-        GetTodosRequest("info@schmuck-media.com", mainActivityTodo).execute(URL("https://v1.api.evendo.schmuck-media.com/appointment/list"))
-    }*/
+        GetTodoRequest("info@schmuck-media.com", mainActivityTodo).execute(URL("https://v1.api.evendo.schmuck-media.com/todos/list"))
+    }
 
     fun addTodo2(todo: Todo) {
         addTodo(todo)
