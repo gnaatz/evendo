@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".fragment.CreateEvent"
+        <activity android:name=".activities.CreateEvent"
                 android:parentActivityName=".MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
