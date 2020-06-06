@@ -43,7 +43,7 @@ class TodoLoader(mainActivityTodo: MainActivityTodo) {
 
     init {
         Toast.makeText(mainActivityTodo, "Getting Todos initially", Toast.LENGTH_SHORT).show()
-        GetTodoRequest("info@schmuck-media.com", mainActivityTodo).execute(URL("https://v1.api.evendo.schmuck-media.com/todos/list"))
+        GetTodoRequest("info@schmuck-media.com", mainActivityTodo).execute(URL("https://v1.api.evendo.schmuck-media.com/todo/list"))
     }
 
     fun addTodo2(todo: Todo) {
