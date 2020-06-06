@@ -14,7 +14,7 @@ import de.gnaatz.evendo.controller.EventDisplay
 import de.gnaatz.evendo.model.Event
 import de.gnaatz.evendo.controller.EventLoader
 import de.gnaatz.evendo.activities.CreateEvent
-import de.gnaatz.evendo.model.CurrentDay
+import de.gnaatz.evendo.model.CurrentDayEvents
 import de.gnaatz.evendo.util.Finals
 import java.util.*
 import kotlin.collections.ArrayList
@@ -23,8 +23,9 @@ class MainActivity : AppCompatActivity() {
     private val tag = "MainActivity"
 
     private lateinit var calendarView: CalendarView
+    private lateinit var todosButton: View
     private lateinit var fab: View
-    private lateinit var model: CurrentDay
+    private lateinit var model: CurrentDayEvents
     private lateinit var eventLoader: EventLoader
     private lateinit var recyclerView: RecyclerView
     private lateinit var recyclerAdapter: EventDisplay
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(tag, "MainActivity: onCreate()")
         setContentView(R.layout.activity_main)
 
+        todosButton = findViewById(R.id.todos)
         calendarView = findViewById(R.id.calendar)
         fab = findViewById(R.id.fab)
         recyclerView = findViewById(R.id.recyclerView)
@@ -47,8 +49,13 @@ class MainActivity : AppCompatActivity() {
         val month = calendar.get(Calendar.MONTH)
         val day = calendar.get(Calendar.DAY_OF_MONTH)
 
+        todosButton.setOnClickListener{
+            val intent = Intent(this,MainActivityTodo::class.java)
+            this.startActivity(intent)
+        }
+
         eventLoader = EventLoader(this, year, month, day)
-        model = ViewModelProviders.of(this)[CurrentDay::class.java]
+        model = ViewModelProviders.of(this)[CurrentDayEvents::class.java]
 
         calendarView.setOnDateChangeListener(eventLoader)
 
@@ -56,6 +63,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateEvent::class.java)
             startActivityForResult(intent, Finals.CREATE_EVENT)
         }
+
 
         model.observe(this, Observer{ events ->
             recyclerAdapter.updateData(events)

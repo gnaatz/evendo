@@ -19,7 +19,11 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                 <ImageButton
+<<<<<<< HEAD
                         android:id="@+id/back_button_from_todo"
+=======
+                        android:id="@+id/back_button"
+>>>>>>> origin/dev_todos
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -43,7 +47,11 @@
                         android:textColor="@android:color/white"
                         android:inputType="text" />
                 <ImageButton
+<<<<<<< HEAD
                         android:id="@+id/delete_all_text_button_todo"
+=======
+                        android:id="@+id/delete_all_text_button"
+>>>>>>> origin/dev_todos
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -54,7 +62,11 @@
         </androidx.appcompat.widget.Toolbar>
         <LinearLayout
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="wrap_content"
+=======
+                android:layout_height="match_parent"
+>>>>>>> origin/dev_todos
                 android:layout_marginTop="20dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
