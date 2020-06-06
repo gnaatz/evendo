@@ -6,7 +6,7 @@ import android.widget.CalendarView
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import de.gnaatz.evendo.MainActivity
-import de.gnaatz.evendo.model.CurrentDay
+import de.gnaatz.evendo.model.CurrentDayEvents
 import de.gnaatz.evendo.model.Event
 import de.gnaatz.evendo.net.GetEventsRequest
 import java.net.URL
@@ -83,7 +83,7 @@ class EventLoader(mainActivity: MainActivity, private var year: Int, private var
         }
     }
 
-    private val model = ViewModelProviders.of(mainActivity)[CurrentDay::class.java]
+    private val model = ViewModelProviders.of(mainActivity)[CurrentDayEvents::class.java]
 
     init {
         Toast.makeText(mainActivity, "Getting Dates initially", Toast.LENGTH_SHORT).show()

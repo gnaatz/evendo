@@ -5,7 +5,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_add_event"
+            android:id="@+id/toolbar_add_todo"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             android:minHeight="?android:attr/actionBarSize"
@@ -17,10 +17,10 @@
                 android:text="@string/app_name"
                 android:textSize="18sp"/>
         <Button
-                android:id="@+id/todos"
+                android:id="@+id/events"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TODOs"
+                android:text="Events"
                 android:layout_gravity="right"/>
     </androidx.appcompat.widget.Toolbar>
     <LinearLayout
@@ -28,17 +28,13 @@
             android:layout_height="match_parent"
             android:layout_marginTop="?android:attr/actionBarSize"
             android:orientation="vertical">
-        <CalendarView
-                android:id="@+id/calendar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+                android:id="@+id/recyclerView_todo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
     </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+            android:id="@+id/fab_todo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"

@@ -16,11 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivityTodo"/>
         <activity android:name=".fragment.CreateEvent"
                 android:parentActivityName=".MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".fragment.CreateTODO"
+                android:parentActivityName=".MainActivityTodo">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivityTodo" />
         </activity>
 
     </application>
