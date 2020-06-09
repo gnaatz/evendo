@@ -42,9 +42,9 @@ class EspressoTest {
         @get:Rule
     val activityRule = ActivityTestRule(MainActivity::class.java)
 
+
     @Test
     fun createEvent() {
-
         var hour = 10
         var minutes = 40
 
@@ -104,4 +104,19 @@ class EspressoTest {
             }
         }
     }
+
+    @Test
+    fun switchTab(){
+        onView(withId(R.id.todos)).perform(click())
+    }
+
+    @Test
+    fun createTodo(){
+        switchTab()
+        onView(withId(R.id.fab_todo)).perform(click())
+        onView(withId(R.id.add_title_edit_text_todo)).perform(typeText("Test Todo Title"))
+        onView(withId(R.id.description_add_todo)).perform(typeText("Test Todo Description"), ViewActions.closeSoftKeyboard())
+        onView(withId(R.id.fab_create_todo)).perform(click())
+    }
+
 }
