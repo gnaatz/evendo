@@ -23,7 +23,7 @@ This use case is for updating the entries list after changing the day in the cal
 #### 2.1.1 Activity Diagram
 ![Activity ChangeDay](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_ChangeDay.svg)
 #### 2.1.2 Mock up
-![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
+![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/mockups/changeDayMockup.png)
 ### 2.2 Alternative Flows
 There are no alternative possible flows discussed. Only our Basic Flow should work.
 
