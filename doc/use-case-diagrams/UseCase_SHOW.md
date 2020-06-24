@@ -20,11 +20,11 @@ This use case is for showing entries in the calendar, called events.
 
 ## 2. Flow of Events
 ### 2.1 Basic Flow
-![Workflow Event](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ShowEvent.svg)
+![Workflow Event](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_ShowEvent.svg)
 #### 2.1.1 Activity Diagram
-Will be added later on!
+![Activity Diagram](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_ShowEvent.svg)
 #### 2.1.2 Mock up
-![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
+![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/mockups/editMockup.png)
 ### 2.2 Alternative Flows
 There are no alternative possible flows discussed. Only our Basic Flow should work.
 
