@@ -29,15 +29,15 @@
 ### 1.1 Purpose
 
 The purpose of this SRS is to discribe the requirements of our complete Application.
-The Main focus is the Android-App.
+The Main focus is the Android-App combined with our storage backend service. 
 
 ### 1.2 Scope
 
 The Evendo Appllication helps you to stay organized. It provides the opportunity to assign ToDos directly to an Event in one of your calendars. You will never forget a pre-meeting task if you use Evendo.
 
-You can create Calendars, Events and ToDos or create ToDos connected to an Event. You will be able to even import RAPLA or any ical file you wish.
-The Data will be saved on a backend Server so you can log on on multiple devices.
-You will find our UseCase models here - [4. Supporting Information](#)
+You can create Events and ToDos or create ToDos connected to an Event within your Calendar. You will be able to even import RAPLA or any ical file you wish.
+The Data will be saved on a backend Server so you can log on on multiple devices. Our intelligent synchronization service helps you synchronizing all your events and todos.
+You will find our UseCase specifications here - [4. Supporting Information](#)
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
 
@@ -107,7 +107,7 @@ If the user has made any changes it shall be impossible that the data is not syn
 
 ### 3.4 Performance
 
-To be discussed.
+We had a long discussion about performance parameters. We want to have the possiblity to run up to 1000 Users at the same time requesting, changing or removing data from our system.
 
 #### 3.4.1 Performance Requirement One
 
@@ -154,40 +154,51 @@ The general App.
 	- Create ToDo Dialog
 	- Import Calendar Dialog
 	- Create ToDo for Event Dialog
+	- Edit Event Dialog
+	- Edit ToDo Dialog
 
 #### 3.9.2 Hardware Interfaces
 
 The frontend should be hardware independent.
 
-The backend is build for x64 hardware.
+The backend is build for every operating system which is able to run NodeJS Version 10 or newer with the following minimum system requirements:
+1. 1 GB of ram
+2. 1 CPU core
+3. min. 1GB of free hard disk space
+4. The system should be 24/7 runnable.
 
 #### 3.9.3 Software Interfaces
 
-The frontend software is limited to Android. Explicit versions will be released after checking the requirements of our Kotlin Code.
+The frontend software is limited to Android. Our app is compatible to your smartphone if your device uses Android Pi or newer. 
 
-The backend software is not limited to any operating system.
+The backend software is not limited to any operating system. The operating system should be able to handle a MySQL Server, Nginx Webserver and NodeJS.
 
 #### 3.9.4 Communication Interfaces
 
-Backend Server for the storage of the data to allow the access via multiple devices.
+Backend Server for the storage of the data to allow the access via multiple devices. The Backend service will communicate via REST services with the android app. For security reasons, we use HTTPS encryption. 
 
 ### 3.10 Licensing Requirements
 
-Evendo will be released on MIT License.
+Evendo will be released on MIT License. Currently there are no other plans regarding license changes.
 
 ### 3.11 Legal, Copyright, and Other Notices
 
-Nothing required.
+Copyright 2019-2020 Evendo Software. 
+No further notes required.
  
 ### 3.12 Applicable Standards
 
-tbd
+For the backend service, we are able to use the HTTPS standard to fulfill security aspects. In addition to that, because of NodeJS we are able to include all packages developed within the node package manager. But the most of them don't belong to an applicable standard.
 
 ## 4. Supporting Information
 
 Use-Case Diagrams:
 [Create Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_EVENT.md)
+
 [Create ToDo](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_TODO.md)
+
 [Show Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_SHOW.md)
+
 [Change Day](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_CHANGEDAY.md)
+
 [Create ToDO in Event](https://github.com/gnaatz/evendo/blob/docu/doc/use-case-diagrams/UseCase_CREATETODOINEVENT.md)
