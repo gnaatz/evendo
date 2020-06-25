@@ -34,3 +34,14 @@ There are no alternative possible flows discussed. Only our Basic Flow should wo
 
 ## 4. Postconditions
 After sending request to the service the service should create an todo for an appointment directly into the database. The client should sync this service with the local stored data.
+
+## 5. Function Points Calculation
+This Usecase has a classification of 43.24 Function Points. This is how we calculated the score:
+![FunctionPointsCalculation1](https://github.com/gnaatz/evendo/blob/docu/doc/function-points/CreateTODO01.png)
+![FunctionPointsCalculation2](https://github.com/gnaatz/evendo/blob/docu/doc/function-points/CreateTODO02.png)
+
+
+Compared to our other usecases, this score is pretty high. The reason is that creating a todo event to your calendar is pretty much more complicated than chaning the current day (this only implies an select). Add a TODO implies an insert, maybe an update and of course a select. You can see our overall function points diagram down here:
+![FunctionPoints](https://github.com/gnaatz/evendo/blob/docu/doc/pm/Function%20Points/Time_vs_FP.png)
+
+
