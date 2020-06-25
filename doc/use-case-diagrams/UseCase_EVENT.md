@@ -12,6 +12,7 @@ Date | Version | Description | Author
   - [2.2 Alternative Flows](#22-alternative-flows)
 - [3. Preconditions](#4-preconditions)
 - [4. Postconditions](#5-postconditions)
+- [5. Function Points Calculation](#5-function-points-calculation)
 
 ## 1. Use-Case Create Event
 ### 1.1 Brief Description
@@ -34,3 +35,13 @@ There are no alternative possible flows discussed. Only our Basic Flow should wo
 
 ## 4. Postconditions
 After sending request to the service the service should return a success entry in database for this user. The client should sync this service with the local stored data.
+
+## 5. Function Points Calculation
+This Usecase has a classification of 42.3 Function Points. This is how we calculated the score:
+![FunctionPointsCalculation1](https://github.com/gnaatz/evendo/blob/docu/doc/function-points/CreateEvent01.png)
+![FunctionPointsCalculation2](https://github.com/gnaatz/evendo/blob/docu/doc/function-points/CreateEvent02.png)
+
+
+Compared to our other usecases, this score is pretty high. The reason is that creating an event to your calendar is pretty much more complicated than changing the current day (this only implies an select). Add an event implies an insert, maybe an update and of course a select. As well as a lot of function calls for sending invitations to other users. You can see our overall function points diagram down here: 
+![FunctionPoints](https://github.com/gnaatz/evendo/blob/docu/doc/pm/Function%20Points/Time_vs_FP.png)
+
