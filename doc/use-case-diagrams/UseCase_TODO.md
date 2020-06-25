@@ -12,6 +12,7 @@ Date | Version | Description | Author
   - [2.2 Alternative Flows](#22-alternative-flows)
 - [3. Preconditions](#4-preconditions)
 - [4. Postconditions](#5-postconditions)
+- [5. Function Points Calculation](#5-function-points-calculation)
 
 ## 1. Use-Case Create TODO
 ### 1.1 Brief Description
@@ -34,3 +35,12 @@ There are no alternative possible flows discussed. Only our Basic Flow should wo
 
 ## 4. Postconditions
 After sending request to the service the service should add an new TODO. The client should sync this service with the local stored data.
+
+## 5. Function Points Calculation
+This Usecase has a classification of 43.24 Function Points. This is how we calculated the score:
+![FunctionPointsCalculation1](https://github.com/gnaatz/evendo/blob/docu/doc/function-points/TODOinEvent01.png)
+![FunctionPointsCalculation2](https://github.com/gnaatz/evendo/blob/docu/doc/function-points/TODOinEvent02.png)
+
+
+This usecase has the same complexity as our create TODO usecase because we use the same procedure to create an standalone TODO element. You can see our overall function points diagram down here: 
+![FunctionPoints](https://github.com/gnaatz/evendo/blob/docu/doc/pm/Function%20Points/Time_vs_FP.png)
