@@ -7,24 +7,22 @@ import cucumber.api.java.en.When;
 import static org.junit.Assert.assertEquals;
 
 public class CreateEvent {
-    private String day;
-    private String name;
+    private String title;
 
     private String actualAnswer;
 
-    @Given("(.*?) and (.*?) are required")
-    public void dayAndNameAreRequired(String day, String name) {
-        this.day = day;
-        this.name = name;
+    @Given("(.*?) is input value")
+    public void titleIsInputValue(String title) {
+        this.title = title;
     }
 
-    @When("I press the button to create an event")
-    public void iPressTheButtonToCreateAnEvent() {
-        this.actualAnswer = (!(day.isEmpty() || name.isEmpty())) ? "right" : "wrong";
+    @When("I create an event with this input")
+    public void iCreateAnEventWithThisInput() {
+        this.actualAnswer = (! title.isEmpty()) ? "right" : "false";
     }
 
     @Then("(.*?) shall be returned")
-    public void shouldBeReturned(String answer) {
+    public void shallBeReturned(String answer) {
         assertEquals(answer, actualAnswer);
     }
 }

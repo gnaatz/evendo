@@ -18,11 +18,11 @@ public class CreateTodo {
 
     @When("I press the button to create a todo")
     public void iPressTheButtonToCreateATodo() {
-        this.actualAnswer = "" + !(title.isEmpty());
+        this.actualAnswer = !(title.isEmpty()) ? "true" : "false";
     }
 
     @Then("(.*?) should be returned3")
-    public void answerShouldBeReturned(String answer) {
+    public void shouldBeReturned3(String answer) {
         assertEquals(actualAnswer, answer);
     }
 }

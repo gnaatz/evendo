@@ -7,8 +7,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import de.gnaatz.evendo.controller.EventLoader
 
-class CurrentDay: ViewModel() {
-    private val tag = "CurrentDay: ViewModel"
+class CurrentDayEvents: ViewModel() {
+    private val tag = "CurrentDayEvents: ViewModel"
 
     private var eventList: MutableLiveData<ArrayList<Event>> = MutableLiveData()
 

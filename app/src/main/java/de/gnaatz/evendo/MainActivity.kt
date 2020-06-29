@@ -4,28 +4,20 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.CalendarView
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
-import androidx.core.view.children
-import androidx.core.view.get
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import de.gnaatz.evendo.controller.EventDisplay
 import de.gnaatz.evendo.model.Event
 import de.gnaatz.evendo.controller.EventLoader
-import de.gnaatz.evendo.fragment.CreateEvent
-import de.gnaatz.evendo.model.CurrentDay
+import de.gnaatz.evendo.activities.CreateEvent
+import de.gnaatz.evendo.model.CurrentDayEvents
+import de.gnaatz.evendo.model.EventDisplayable
+import de.gnaatz.evendo.net.CreateEventRequest
 import de.gnaatz.evendo.util.Finals
-import kotlinx.android.synthetic.main.activity_main.view.*
-import java.lang.ClassCastException
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -33,8 +25,9 @@ class MainActivity : AppCompatActivity() {
     private val tag = "MainActivity"
 
     private lateinit var calendarView: CalendarView
+    private lateinit var todosButton: View
     private lateinit var fab: View
-    private lateinit var model: CurrentDay
+    private lateinit var model: CurrentDayEvents
     private lateinit var eventLoader: EventLoader
     private lateinit var recyclerView: RecyclerView
     private lateinit var recyclerAdapter: EventDisplay
@@ -44,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(tag, "MainActivity: onCreate()")
         setContentView(R.layout.activity_main)
 
+        todosButton = findViewById(R.id.todos)
         calendarView = findViewById(R.id.calendar)
         fab = findViewById(R.id.fab)
         recyclerView = findViewById(R.id.recyclerView)
@@ -57,8 +51,13 @@ class MainActivity : AppCompatActivity() {
         val month = calendar.get(Calendar.MONTH)
         val day = calendar.get(Calendar.DAY_OF_MONTH)
 
+        todosButton.setOnClickListener{
+            val intent = Intent(this,MainActivityTodo::class.java)
+            this.startActivity(intent)
+        }
+
         eventLoader = EventLoader(this, year, month, day)
-        model = ViewModelProviders.of(this)[CurrentDay::class.java]
+        model = ViewModelProviders.of(this)[CurrentDayEvents::class.java]
 
         calendarView.setOnDateChangeListener(eventLoader)
 
@@ -67,14 +66,15 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, Finals.CREATE_EVENT)
         }
 
+
         model.observe(this, Observer{ events ->
-            recyclerAdapter.updateData(events)
+            recyclerAdapter.updateData(EventDisplayable.fromEventList(events) as ArrayList<EventDisplayable>)
         })
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         val tempEvents = ArrayList<Event>()
         tempEvents.addAll(eventLoader.getEvents())
-        recyclerAdapter = EventDisplay(tempEvents)
+        recyclerAdapter = EventDisplay(EventDisplayable.fromEventList(tempEvents) as ArrayList<EventDisplayable>)
         recyclerView.adapter = recyclerAdapter
     }
 
@@ -95,6 +95,15 @@ class MainActivity : AppCompatActivity() {
                     val hour = bundle.get("hour") as Int
                     val minute = bundle.get("minute") as Int
                     val event = Event(title, description, hour, minute)
+
+                    val calendar = Calendar.getInstance()
+
+                    val year = calendar.get(Calendar.YEAR)
+                    val month = calendar.get(Calendar.MONTH)
+                    val day: String
+                    if (calendar.get(Calendar.DAY_OF_MONTH) < 9) day =  "0${calendar.get(Calendar.DAY_OF_MONTH) + 1}" else day = "${calendar.get(Calendar.DAY_OF_MONTH) + 1}"
+
+                    CreateEventRequest(Event(title, description, hour, minute), year, month, day, "info@schmuck-media.com", this).execute()
                     eventLoader.addEvent(event)
                 }
             }

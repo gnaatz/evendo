@@ -1,4 +1,4 @@
-package de.gnaatz.evendo.fragment
+package de.gnaatz.evendo.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import de.gnaatz.evendo.R
+import de.gnaatz.evendo.model.Event
+import de.gnaatz.evendo.net.CreateEventRequest
 import de.gnaatz.evendo.util.Finals
+import kotlin.math.min
 
 
 class CreateEvent: AppCompatActivity() {
