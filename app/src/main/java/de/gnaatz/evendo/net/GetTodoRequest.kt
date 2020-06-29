@@ -1,14 +1,11 @@
 package de.gnaatz.evendo.net
 
-import android.R
 import android.content.Context
 import android.os.AsyncTask
 import android.util.Log
-import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.google.gson.Gson
 import de.gnaatz.evendo.controller.EventLoader
 import org.json.JSONObject
 import java.net.URL

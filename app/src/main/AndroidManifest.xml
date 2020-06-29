@@ -23,7 +23,7 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".MainActivity" />
         </activity>
-        <activity android:name=".fragment.CreateTODO"
+        <activity android:name=".activities.CreateTODO"
                 android:parentActivityName=".MainActivityTodo">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"

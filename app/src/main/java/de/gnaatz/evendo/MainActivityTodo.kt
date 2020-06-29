@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import de.gnaatz.evendo.controller.TodoDisplay
 import de.gnaatz.evendo.controller.TodoLoader
-import de.gnaatz.evendo.fragment.CreateTODO
+import de.gnaatz.evendo.activities.CreateTODO
 import de.gnaatz.evendo.model.CurrentDayEvents
 import de.gnaatz.evendo.model.CurrentDayTodos
 import de.gnaatz.evendo.model.Todo

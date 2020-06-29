@@ -1,7 +1,5 @@
 package de.gnaatz.evendo.util
 
-import de.gnaatz.evendo.fragment.CreateTODO
-
 class Finals {
     companion object {
         val CREATE_EVENT_ABORTED = 1

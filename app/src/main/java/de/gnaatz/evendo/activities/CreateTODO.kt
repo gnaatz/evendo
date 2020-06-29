@@ -1,4 +1,4 @@
-package de.gnaatz.evendo.fragment
+package de.gnaatz.evendo.activities
 
 import android.content.Intent
 import android.os.Bundle

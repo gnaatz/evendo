@@ -15,6 +15,8 @@ import de.gnaatz.evendo.model.Event
 import de.gnaatz.evendo.controller.EventLoader
 import de.gnaatz.evendo.activities.CreateEvent
 import de.gnaatz.evendo.model.CurrentDayEvents
+import de.gnaatz.evendo.model.EventDisplayable
+import de.gnaatz.evendo.net.CreateEventRequest
 import de.gnaatz.evendo.util.Finals
 import java.util.*
 import kotlin.collections.ArrayList
@@ -66,13 +68,13 @@ class MainActivity : AppCompatActivity() {
 
 
         model.observe(this, Observer{ events ->
-            recyclerAdapter.updateData(events)
+            recyclerAdapter.updateData(EventDisplayable.fromEventList(events) as ArrayList<EventDisplayable>)
         })
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         val tempEvents = ArrayList<Event>()
         tempEvents.addAll(eventLoader.getEvents())
-        recyclerAdapter = EventDisplay(tempEvents)
+        recyclerAdapter = EventDisplay(EventDisplayable.fromEventList(tempEvents) as ArrayList<EventDisplayable>)
         recyclerView.adapter = recyclerAdapter
     }
 
@@ -93,6 +95,15 @@ class MainActivity : AppCompatActivity() {
                     val hour = bundle.get("hour") as Int
                     val minute = bundle.get("minute") as Int
                     val event = Event(title, description, hour, minute)
+
+                    val calendar = Calendar.getInstance()
+
+                    val year = calendar.get(Calendar.YEAR)
+                    val month = calendar.get(Calendar.MONTH)
+                    val day: String
+                    if (calendar.get(Calendar.DAY_OF_MONTH) < 9) day =  "0${calendar.get(Calendar.DAY_OF_MONTH) + 1}" else day = "${calendar.get(Calendar.DAY_OF_MONTH) + 1}"
+
+                    CreateEventRequest(Event(title, description, hour, minute), year, month, day, "info@schmuck-media.com", this).execute()
                     eventLoader.addEvent(event)
                 }
             }

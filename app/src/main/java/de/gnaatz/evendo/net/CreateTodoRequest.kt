@@ -7,7 +7,6 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import de.gnaatz.evendo.model.Event
 import de.gnaatz.evendo.model.Todo
 import org.json.JSONObject
 import java.net.URL
