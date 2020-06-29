@@ -123,11 +123,15 @@ The Team will try his best to fullfill the coding and naming standards of the la
 
 ### 3.6 Design Constraints
 
-#### 3.6.1 Android Studio
+#### 3.6.1 Tech Stack
+![Alt-Text](https://github.com/gnaatz/evendo/blob/docu/doc/pm/techstack.png)
+
+
+#### 3.6.2 Android Studio
 
 The main part of the app will be developt using Android Studio.
 
-#### 3.6.2 Design
+#### 3.6.3 Design
 
 We made a design prototype of how the app should look like.
 You can find it [here]( evendo/doc/app.png)
