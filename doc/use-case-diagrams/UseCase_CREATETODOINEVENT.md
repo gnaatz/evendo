@@ -10,6 +10,7 @@ Date | Version | Description | Author
 - [2. Flow of Events](#2-flow-of-events)
   - [2.1 Basic Flow](#21-basic-flow)
   - [2.2 Alternative Flows](#22-alternative-flows)
+  - [2.3 Feature File](#23-feature-files)
 - [3. Preconditions](#4-preconditions)
 - [4. Postconditions](#5-postconditions)
 
@@ -24,6 +25,8 @@ This use case is to create a todo according to an appointment.
 ![Activity Diagram](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_TODO.svg)
 #### 2.1.2 Mock up
 ![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
+ ### 2.3 Feature File
+![Feature File](https://github.com/gnaatz/evendo/blob/docu/doc/feature-files-screenshots/CreateTodoInEventFeatureScreenshot.jpeg)
 ### 2.2 Alternative Flows
 There are no alternative possible flows discussed. Only our Basic Flow should work.
 
