@@ -24,7 +24,7 @@ This use case is to create a todo according to an appointment.
 #### 2.1.1 Activity Diagram
 ![Activity Diagram](https://github.com/gnaatz/evendo/blob/docu/doc/activity-diagrams/ActivityDiagram_TODO.svg)
 #### 2.1.2 Mock up
-![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/app.png)
+![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/addTodo.png)
  ### 2.3 Feature File
 ![Feature File](https://github.com/gnaatz/evendo/blob/docu/doc/feature-files-screenshots/CreateTodoInEventFeatureScreenshot.jpeg)
 ### 2.2 Alternative Flows
