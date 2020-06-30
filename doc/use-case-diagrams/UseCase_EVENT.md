@@ -30,7 +30,7 @@ This use case is for creating new entries to the calendar, called events.
 ### 2.2 Alternative Flows
 There are no alternative possible flows discussed. Only our Basic Flow should work.
 ### 2.3 Feature File
-![Feature File](https://github.com/gnaatz/evendo/blob/docu/doc/feature-files-screenshots/CreateEventFeatureScreenshot.jpeg)
+![Feature File](https://github.com/gnaatz/evendo/blob/docu/doc/feature-files-screenshots/CreateEventFeautreScreenshot.jpeg)
 
 ## 3. Preconditions
 1. The user has to be logged in
