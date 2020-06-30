@@ -10,6 +10,8 @@ Date | Version | Description | Author
 - [2. Flow of Events](#2-flow-of-events)
   - [2.1 Basic Flow](#21-basic-flow)
   - [2.2 Alternative Flows](#22-alternative-flows)
+  - [2.3 Feature Files](#22-feature-files)
+
 - [3. Preconditions](#4-preconditions)
 - [4. Postconditions](#5-postconditions)
 - [5. Function Points Calculation](#5-function-points-calculation)
@@ -27,6 +29,8 @@ This use case is for creating new entries to the calendar, called events.
 ![Mockup](https://github.com/gnaatz/evendo/blob/docu/doc/mockups/createEventMockup.png)
 ### 2.2 Alternative Flows
 There are no alternative possible flows discussed. Only our Basic Flow should work.
+### 2.3 Feature File
+![Feature File](https://github.com/gnaatz/evendo/blob/docu/doc/feature-files-screenshots/CreateEventFeatureScreenshot.jpeg)
 
 ## 3. Preconditions
 1. The user has to be logged in
