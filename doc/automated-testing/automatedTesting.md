@@ -81,34 +81,9 @@ message: () =>  `expected ${received}. matched: ${argument}`,
 
 ### Flow Chart
 
-```
-graph TD
-A[Cronjob]
-B[Runs a Shell Script]
-G{Check if Screen exists}
-H[Yes]
-I[No]
-J[Sends Error Mail]
-C[Runs command 'git pull']
-D[Runs command 'npm install']
-E[Runs command 'npm test --runInBand']
-F{if tests are successful}
-A --> B
-B --> G
-G --> H
-G --> I
-I --> J
-H --> D
-H --> E
-H --> C
-E --> F
-F --> M[Yes]
-F --> N[No]
-N --> K[Send Error Mail]
-M --> X[Stopps current Node Service]
-X --> Y[Starts Node Service again]
-Y --> Z[End of Script]
-```
+![FlowChart1](https://github.com/gnaatz/evendo/blob/docu/doc/automated-testing/flow1.png?raw=true)
+![FlowChart2](https://github.com/gnaatz/evendo/blob/docu/doc/automated-testing/flow2.png?raw=true)
+
 
 ### Conclusion
 
