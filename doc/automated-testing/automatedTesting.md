@@ -81,7 +81,7 @@ message: () =>  `expected ${received}. matched: ${argument}`,
 
 ### Flow Chart
 
-```mermaid
+```
 graph TD
 A[Cronjob]
 B[Runs a Shell Script]
